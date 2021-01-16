@@ -57,22 +57,22 @@ int main() {
             result = a - b;
             break;
         
-        case '/'  :{ if (b!=0)
+        case '/'  :{ if (b!=0) 
             result = a / b;
-            else
+            else{
                 printf("Error calcul\n");
-                exit(2);
+                exit(2);}
             
             break;}  
 
         case '%' :{ if (b!=0)
             result = (int)a % (int)b;
-            else
+            else{
                 printf("Error calcul\n");
-                exit(2);
+                exit(2);}
             break;}
       default:
-          printf("\nError! operator is not correct");
+          printf("\nError! operator is not correct\n");
           exit(2);
           break;
     }
